@@ -486,7 +486,7 @@ cesa::vector<T, max_elements>::insert(const_iterator pos, InputIt first, InputIt
 template <typename T, std::size_t max_elements>
 constexpr typename cesa::vector<T, max_elements>::iterator
 cesa::vector<T, max_elements>::insert(const const_iterator              pos,
-                                                  std::initializer_list<value_type> initializer_list)
+                                      std::initializer_list<value_type> initializer_list)
 {
     return insert(pos, initializer_list.begin(), initializer_list.end());
 }
